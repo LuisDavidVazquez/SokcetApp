@@ -1,0 +1,92 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(49, 56, 77);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-sign {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-sign {
+    display: flex;
+    width: 400px;
+    border-radius: 50px;
+    border: 4px solid white;
+    background-color: rgb(35, 41, 56);
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.h1-sign {
+    font-size: 35px;
+}
+
+.signUp {
+    color: white;
+}
+
+.form-sign {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.input-sign {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: .5px;
+    box-sizing: border-box;
+    padding-left: 7px;
+}
+
+.button-sign {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(64, 74, 102);
+    border: 1px solid transparent;
+    font-size: 18px;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+.button-sign:hover {
+    background-color: rgb(35, 41, 56);
+    border: 1px solid white;
+    transition: background-color 0.2s;
+
+}
+
+.cargando {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    border-top-color: transparent;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

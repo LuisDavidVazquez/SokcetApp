@@ -1,0 +1,162 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(49, 56, 77);
+    color: white;
+}
+
+.main-home {
+    display: flex;
+}
+
+.aside-home {
+    background-color: rgb(35, 41, 56);
+    width: 30vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-home {
+    height: 45vh;
+    border: 4px solid white;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-amigos-home {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amigos-home {
+    height: 45vh;
+    box-sizing: border-box;
+    margin:  20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scrollbar-color: transparent transparent; 
+}
+
+.button-sign {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(64, 74, 102);
+    border: 1px solid transparent;
+    font-size: 18px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.button-sign:hover {
+    background-color: rgb(35, 41, 56);
+    border: 1px solid white;
+    transition: background-color 0.2s;
+}
+
+.button-home {
+    box-sizing: border-box;
+    height: 5vh;
+}
+
+.h1-home {
+    font-size: 35px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.li-amigos-home {
+    text-decoration: none;
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+}
+
+.strong-amigos-home { 
+    font-size: 18px; 
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+.header-home {
+    background-color: rgb(66, 76, 105);
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+}
+
+.section-home {
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    scrollbar-color: transparent transparent; 
+}
+
+.header-search-home {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-createPost-home {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-createPostButton-home {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(35, 41, 56);
+}
+.header-createPostButton-home:hover {
+    background-color: rgb(49, 56, 77);
+    border: 1px solid white;
+    transition: background-color 0.2s;
+}
+
+.titulo-publicaciones {
+    display: flex;
+    
+}
+
+.section-publicaciones-home {
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 4% 15%;
+    border: 3px solid white;
+    background-color: rgb(35, 41, 56);
+}

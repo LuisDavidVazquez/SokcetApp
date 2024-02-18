@@ -1,8 +1,8 @@
-import Login from '@/views/SignIn'
+import SignUp from '@/views/SignUp';
 
 function page() {
   return (
-    <Login />
+    <SignUp />
   )
 }
 
