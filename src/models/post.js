@@ -6,11 +6,6 @@ const comentsSchema = new Schema ({
         ref: 'users',
         required: [true, "El id del usuario es requerido"],
     },
-    fecha: {
-        type: String,
-        required:
-         [true, "La fecha es requerida"],
-    },
     content: {
         type: String,
         required: [true, "La descripcion es requerida"],

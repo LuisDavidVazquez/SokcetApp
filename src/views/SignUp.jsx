@@ -12,7 +12,7 @@ function Login() {
   const router = useRouter();
   const [cargando, setCargando] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const crearUsuario = async (e) => {
     e.preventDefault();
     setError("");
   
@@ -58,7 +58,7 @@ function Login() {
     <main className='main-sign'>
       <section className='section-sign'>
         <h1 className='h1-sign'>Registrar Usuario</h1><br /><br />
-        <form onSubmit={handleSubmit} className='form-sign' action="">
+        <form onSubmit={crearUsuario} className='form-sign' action="">
           <h3>Usuario</h3>
           <label className='label-sign' htmlFor="usuario">
             <input

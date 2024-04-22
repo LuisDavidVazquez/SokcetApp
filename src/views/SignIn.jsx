@@ -14,7 +14,7 @@ function Login() {
   const [cargando, setCargando] = useState(false);
   const session= useSession();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async () => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     setError("");

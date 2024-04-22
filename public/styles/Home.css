@@ -152,6 +152,10 @@ ul {
     
 }
 
+.contenido-publicaciones {
+    border-bottom: 3px solid white;
+}
+
 .section-publicaciones-home {
     border-radius: 10px;
     box-sizing: border-box;
@@ -159,4 +163,47 @@ ul {
     margin: 4% 15%;
     border: 3px solid white;
     background-color: rgb(35, 41, 56);
+}
+
+.comentarios-publicaciones {
+    
+}
+
+.comentarios-input {
+    height: 35px;
+    width: 70%;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 5px;
+    background-color: rgb(49, 56, 77);
+    border: 0px solid transparent;
+}
+
+.comentarios-input::placeholder {
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+.comentarios-boton {
+    font-size: 18px;
+    width: 30%;
+    height: 35px;
+    color: white;
+    background-color: rgb(64, 74, 102);
+    cursor: pointer;
+    border: 0px solid transparent;
+}
+
+.comentarios-boton:hover {
+    background-color: rgb(35, 41, 56);
+    border: 1px solid white;
+    transition: background-color 0.2s;
+}
+
+.comentarios-contenido {
+    width: 80%;
+
 }

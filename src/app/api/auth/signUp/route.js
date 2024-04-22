@@ -71,14 +71,3 @@ export async function PUT(request, { params }) {
       });
     }
   }
-
-export async function GET(request) {
-    connectionDB();
-    try {
-        const usersFound = await User.find();
-        return NextResponse.json(usersFound);
-    } catch (error) {
-        console.log(error);
-        return NextResponse.json(error);
-    }
-}

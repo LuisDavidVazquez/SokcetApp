@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { connectionDB } from '@/libs/mongodb';
 import User from "@/models/user";
 import Post from "@/models/post";
+import { subscribeClient, unsubscribeClient } from '@/app/api/auth/post/route'
 
 export async function GET(request, { params }) {
     const id = params.id; 
@@ -15,7 +16,8 @@ export async function GET(request, { params }) {
 
         const posts = await Post.find({
            user_id: { $in: followers},
-        }).populate("user_id", "name", User);
+        }).populate("user_id", "name", User).populate("comments.user_id", "name", User).sort({ _id: -1 });
+
         return NextResponse.json(posts);
     } catch (error) {
         console.log(error);

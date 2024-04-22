@@ -4,8 +4,8 @@ import Post from "@/models/post";
 
 export async function PUT(request) {
     connectionDB();
-    const { user_id, post_id, fecha, content } = await request.json();
-    console.log( user_id, post_id, fecha, content);
+    const { user_id, post_id, content } = await request.json();
+    console.log( user_id, post_id, content);
     try {
         const newComment = await Post.updateOne(
             { _id: post_id },
@@ -14,7 +14,6 @@ export async function PUT(request) {
                 {
                     comments: {
                         user_id: user_id,
-                        fecha : fecha,
                         content : content
                     }
                 }

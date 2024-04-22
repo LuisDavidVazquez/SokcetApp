@@ -23,3 +23,16 @@ export async function POST(request) {
     }
 }
 
+export function subscribeClient(client) {
+    // Agrega el cliente a la lista de suscritos
+    clients.push(client);
+}
+
+export function unsubscribeClient(client) {
+    // Remueve el cliente de la lista de suscritos
+    const index = clients.indexOf(client);
+    if (index !== -1) {
+        clients.splice(index, 1);
+    }
+}
+
